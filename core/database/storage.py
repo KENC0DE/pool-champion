@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 from core.models.base import BaseDB
 from os import getenv
-from models.player import Player
+from core.models.player import Player
 
 
 class Storage:
@@ -20,7 +20,7 @@ class Storage:
         password = getenv('POOL_PASS')
         host = getenv('POOL_HOST')
 
-        db_path = f"mysql+mysqlb://{user}:{password}@{host}/{db}"
+        db_path = f"mysql+mysqldb://{user}:{password}@{host}/{db}"
         self.__engine = create_engine(db_path)
 
 

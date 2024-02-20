@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+export POOL_USER=pooladmin;
+export POOL_DB=pool_game_dev;
+export POOL_PASS=poolgame;
+export POOL_HOST=localhost;
