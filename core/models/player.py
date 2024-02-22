@@ -9,6 +9,7 @@ class Player(Base, BaseDB):
     __tablename__ = "players"
 
     name = Column(String(50))
+    won = None
 
 
     def __init__(self, p_name, **kwargs):
